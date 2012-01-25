@@ -1,0 +1,13 @@
+# v1.0.0 - initial release
+name: Commenter JSONP Username
+id: CommenterJSONPUsername
+key: CommenterJSONPUsername
+author_link: http://mt-hacks.com/
+author_name: MT Hacks
+description: Adds the commenter username to the jsonp response from the session_js method of the comments script. Note that some sites prefer not to save the username on the client and may not want to publish the username publicly - such policies may affect whether -- and how -- this plugin is used.
+version: 1.0.0
+plugin_link: http://mt-hacks.com/commenterjsonpusername.html
+
+callbacks:
+    commenter_session_state:       $CommenterJSONPUsername::CommenterJSONPUsername::Callbacks::session_state
+
